@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "columns": [
+      "_source"
+    ],
+    "description": "",
+    "hits": 0,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.xray.*\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    },
+    "sort": [],
+    "title": "Xray Log Volume",
+    "version": 1
+  },
+  "id": "da154020-8173-11eb-80f1-3dc2f2cdb26d",
+  "migrationVersion": {
+    "search": "7.9.3"
+  },
+  "references": [
+    {
+      "id": "fa39b330-8070-11eb-80f1-3dc2f2cdb26d",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+      "type": "index-pattern"
+    }
+  ],
+  "type": "search",
+  "updated_at": "2021-03-10T07:40:14.497Z",
+  "version": "WzE4MjEsMV0="
+}

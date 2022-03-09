@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "columns": [
+      "_source"
+    ],
+    "description": "",
+    "hits": 0,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"*list.manifest*\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"key\":\"log_source\",\"negate\":false,\"params\":{\"query\":\" jfrog.rt.artifactory.access\"},\"type\":\"phrase\",\"value\":\" jfrog.rt.artifactory.access\",\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\"},\"query\":{\"match\":{\"log_source\":{\"query\":\" jfrog.rt.artifactory.access\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"key\":\"action_response\",\"negate\":false,\"params\":{\"query\":\"ACCEPTED DEPLOY\"},\"type\":\"phrase\",\"value\":\"ACCEPTED DEPLOY\",\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index\"},\"query\":{\"match\":{\"action_response\":{\"query\":\"ACCEPTED DEPLOY\",\"type\":\"phrase\"}}}}],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    },
+    "sort": [
+      [
+        "timestamp",
+        "desc"
+      ]
+    ],
+    "title": "Docker pull requests ",
+    "version": 1
+  },
+  "id": "101085d0-1992-11eb-a9c0-a59f3effeb58",
+  "migrationVersion": {
+    "search": "7.9.3"
+  },
+  "references": [
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index",
+      "type": "index-pattern"
+    }
+  ],
+  "type": "search",
+  "updated_at": "2021-03-08T23:59:39.130Z",
+  "version": "WzYzOSwxXQ=="
+}

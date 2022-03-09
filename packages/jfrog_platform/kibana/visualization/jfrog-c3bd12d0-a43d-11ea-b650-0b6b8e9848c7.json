@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "description": "",
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+    },
+    "savedSearchRefName": "search_0",
+    "title": "Accepted Deploys by Username",
+    "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+    "version": 1,
+    "visState": "{\"title\":\"Accepted Deploys by Username\",\"type\":\"table\",\"params\":{\"perPage\":5,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"dimensions\":{\"metrics\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"buckets\":[{\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}},\"params\":{},\"aggType\":\"terms\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"username.keyword\",\"order\":\"desc\",\"size\":5,\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"User\"}}]}"
+  },
+  "id": "c3bd12d0-a43d-11ea-b650-0b6b8e9848c7",
+  "migrationVersion": {
+    "visualization": "7.10.0"
+  },
+  "references": [
+    {
+      "id": "8d4258b0-a43c-11ea-b650-0b6b8e9848c7",
+      "name": "search_0",
+      "type": "search"
+    }
+  ],
+  "type": "visualization",
+  "updated_at": "2021-03-08T23:59:39.130Z",
+  "version": "WzY1OSwxXQ=="
+}

@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "description": "",
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+    },
+    "savedSearchRefName": "search_0",
+    "title": "Dockerhub Pull Requests Trends Per 6 Hours",
+    "uiStateJSON": "{}",
+    "version": 1,
+    "visState": "{\"title\":\"Dockerhub Pull Requests Trends Per 6 Hours\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":false},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}},\"dimensions\":{\"metrics\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"bucket\":{\"accessor\":0,\"format\":{\"id\":\"string\"},\"params\":{},\"aggType\":\"date_range\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"group\",\"params\":{\"field\":\"timestamp\",\"ranges\":[{\"from\":\"now-6h\",\"to\":\"now\"}],\"customLabel\":\"count\"}}]}"
+  },
+  "id": "54e50cd0-1974-11eb-a9c0-a59f3effeb58",
+  "migrationVersion": {
+    "visualization": "7.10.0"
+  },
+  "references": [
+    {
+      "id": "80737060-1971-11eb-a9c0-a59f3effeb58",
+      "name": "search_0",
+      "type": "search"
+    }
+  ],
+  "type": "visualization",
+  "updated_at": "2021-03-08T23:59:39.130Z",
+  "version": "WzY2MywxXQ=="
+}

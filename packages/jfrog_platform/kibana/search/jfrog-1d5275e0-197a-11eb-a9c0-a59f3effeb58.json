@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "columns": [
+      "_source"
+    ],
+    "description": "",
+    "hits": 0,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"list.manifest*\",\"language\":\"kuery\"},\"filter\":[{\"meta\":{\"alias\":null,\"negate\":false,\"type\":\"phrase\",\"key\":\"log_source\",\"value\":\"jfrog.rt.artifactory.access\",\"params\":{\"query\":\"jfrog.rt.artifactory.access\"},\"disabled\":false,\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\"},\"query\":{\"match\":{\"log_source\":{\"query\":\"jfrog.rt.artifactory.access\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"alias\":null,\"negate\":false,\"type\":\"phrase\",\"key\":\"action_response\",\"value\":\"ACCEPTED DOWNLOAD\",\"params\":{\"query\":\"ACCEPTED DOWNLOAD\"},\"disabled\":false,\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index\"},\"query\":{\"match\":{\"action_response\":{\"query\":\"ACCEPTED DOWNLOAD\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    },
+    "sort": [
+      [
+        "timestamp",
+        "desc"
+      ]
+    ],
+    "title": "Accepted Download Lookup",
+    "version": 1
+  },
+  "id": "1d5275e0-197a-11eb-a9c0-a59f3effeb58",
+  "migrationVersion": {
+    "search": "7.9.3"
+  },
+  "references": [
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index",
+      "type": "index-pattern"
+    }
+  ],
+  "type": "search",
+  "updated_at": "2021-03-08T23:59:39.130Z",
+  "version": "WzY0OCwxXQ=="
+}

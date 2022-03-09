@@ -1,0 +1,44 @@
+{
+  "attributes": {
+    "columns": [
+      "_source"
+    ],
+    "description": "",
+    "hits": 0,
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"key\":\"log_source\",\"negate\":false,\"params\":{\"query\":\"jfrog.rt.artifactory.request\"},\"type\":\"phrase\",\"value\":\"jfrog.rt.artifactory.request\",\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\"},\"query\":{\"match\":{\"log_source\":{\"query\":\"jfrog.rt.artifactory.request\",\"type\":\"phrase\"}}}},{\"meta\":{\"alias\":null,\"negate\":true,\"type\":\"phrase\",\"key\":\"request_content_length_2\",\"value\":\"-1\",\"params\":{\"query\":\"-1\"},\"disabled\":false,\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index\"},\"query\":{\"match\":{\"request_content_length_2\":{\"query\":\"-1\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    },
+    "sort": [
+      [
+        "timestamp",
+        "desc"
+      ]
+    ],
+    "title": "Top 10 IPs By Downloads",
+    "version": 1
+  },
+  "id": "e581f880-19b4-11eb-a9c0-a59f3effeb58",
+  "migrationVersion": {
+    "search": "7.9.3"
+  },
+  "references": [
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+      "type": "index-pattern"
+    },
+    {
+      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+      "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[1].meta.index",
+      "type": "index-pattern"
+    }
+  ],
+  "type": "search",
+  "updated_at": "2021-03-08T23:59:39.130Z",
+  "version": "WzY0MCwxXQ=="
+}
