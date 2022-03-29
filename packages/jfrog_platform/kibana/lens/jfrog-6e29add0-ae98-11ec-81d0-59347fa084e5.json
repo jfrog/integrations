@@ -1,0 +1,147 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "01509bf6-4fd9-4963-abbf-153847960749": {
+                            "columnOrder": [
+                                "0c11f085-6e50-45bd-831c-945996712a31",
+                                "1857db4f-15e7-454a-925a-f9a2474fbcfe",
+                                "8d4c2d9e-7850-4fbf-94d5-1dc7589f2fb4",
+                                "b275221e-3f6b-4b1d-aa4d-642aecd8cc44"
+                            ],
+                            "columns": {
+                                "0c11f085-6e50-45bd-831c-945996712a31": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "1857db4f-15e7-454a-925a-f9a2474fbcfe": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Active",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_db_connections_active_total"
+                                },
+                                "8d4c2d9e-7850-4fbf-94d5-1dc7589f2fb4": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Idle",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_db_connections_idle_total"
+                                },
+                                "b275221e-3f6b-4b1d-aa4d-642aecd8cc44": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Min Idle",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_db_connections_min_idle_total"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "1857db4f-15e7-454a-925a-f9a2474fbcfe",
+                            "8d4c2d9e-7850-4fbf-94d5-1dc7589f2fb4",
+                            "b275221e-3f6b-4b1d-aa4d-642aecd8cc44"
+                        ],
+                        "layerId": "01509bf6-4fd9-4963-abbf-153847960749",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "0c11f085-6e50-45bd-831c-945996712a31"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Artifactory DB Connections",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "6e29add0-ae98-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-01509bf6-4fd9-4963-abbf-153847960749",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648473024828,
+        268
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-28T13:10:24.828Z",
+    "version": "WzM5MywxXQ=="
+}

@@ -1,27 +1,32 @@
 {
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        },
+        "savedSearchRefName": "search_0",
+        "title": "Dockerhub Pull Requests in rolling 6 Hr window - cumulative sum",
+        "uiStateJSON": "{\"vis\":{\"colors\":{\"Cumulative Sum of Count\":\"#C15C17\",\"count\":\"#C15C17\"}}}",
+        "version": 1,
+        "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"count\",\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{},\"schema\":\"metricAgg\",\"type\":\"count\"},\"metricAgg\":\"custom\"},\"schema\":\"metric\",\"type\":\"cumulative_sum\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"past 6 hours\",\"drop_partials\":true,\"extended_bounds\":{},\"field\":\"timestamp\",\"interval\":\"6h\",\"min_doc_count\":0,\"timeRange\":{\"from\":\"now/d\",\"to\":\"now/d\"},\"useNormalizedEsInterval\":true},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100,\"filter\":true},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"dimensions\":{\"x\":{\"accessor\":0,\"aggType\":\"date_histogram\",\"format\":{\"id\":\"date\",\"params\":{\"pattern\":\"YYYY-MM-DD HH:mm\"}},\"params\":{\"bounds\":{\"max\":\"2020-10-29T06:59:59.999Z\",\"min\":\"2020-10-28T07:00:00.000Z\"},\"date\":true,\"format\":\"YYYY-MM-DD HH:mm\",\"interval\":\"PT6H\"}},\"y\":[{\"accessor\":1,\"aggType\":\"cumulative_sum\",\"format\":{\"id\":\"number\"},\"params\":{}}]},\"grid\":{\"categoryLines\":false},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"count\"},\"type\":\"value\"}],\"palette\":{\"type\":\"palette\",\"name\":\"kibana_palette\"},\"isVislibVis\":true,\"detailedTooltip\":true},\"title\":\"Dockerhub Pull Requests in rolling 6 Hr window - cumulative sum\",\"type\":\"histogram\"}"
     },
-    "savedSearchRefName": "search_0",
-    "title": "Dockerhub Pull Requests in rolling 6 Hr window - cumulative sum",
-    "uiStateJSON": "{\"vis\":{\"colors\":{\"Cumulative Sum of Count\":\"#C15C17\",\"count\":\"#C15C17\"}}}",
-    "version": 1,
-    "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{\"customLabel\":\"count\",\"customMetric\":{\"enabled\":true,\"id\":\"1-metric\",\"params\":{},\"schema\":{\"aggFilter\":[\"!top_hits\",\"!percentiles\",\"!percentile_ranks\",\"!median\",\"!std_dev\",\"!geo_bounds\",\"!geo_centroid\"],\"deprecate\":false,\"editor\":false,\"group\":\"none\",\"hideCustomLabel\":true,\"max\":null,\"min\":0,\"name\":\"metricAgg\",\"params\":[],\"title\":\"Metric Agg\"},\"type\":\"count\"},\"metricAgg\":\"custom\"},\"schema\":\"metric\",\"type\":\"cumulative_sum\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"past 6 hours\",\"drop_partials\":true,\"extended_bounds\":{},\"field\":\"timestamp\",\"interval\":\"6h\",\"min_doc_count\":0,\"timeRange\":{\"from\":\"now/d\",\"to\":\"now/d\"},\"useNormalizedEsInterval\":true},\"schema\":\"segment\",\"type\":\"date_histogram\"}],\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"dimensions\":{\"x\":{\"accessor\":0,\"aggType\":\"date_histogram\",\"format\":{\"id\":\"date\",\"params\":{\"pattern\":\"YYYY-MM-DD HH:mm\"}},\"params\":{\"bounds\":{\"max\":\"2020-10-29T06:59:59.999Z\",\"min\":\"2020-10-28T07:00:00.000Z\"},\"date\":true,\"format\":\"YYYY-MM-DD HH:mm\",\"interval\":\"PT6H\"}},\"y\":[{\"accessor\":1,\"aggType\":\"cumulative_sum\",\"format\":{\"id\":\"number\"},\"params\":{}}]},\"grid\":{\"categoryLines\":false},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"count\"},\"type\":\"value\"}]},\"title\":\"Dockerhub Pull Requests in rolling 6 Hr window - cumulative sum\",\"type\":\"histogram\"}"
-  },
-  "id": "2adf1040-1972-11eb-a9c0-a59f3effeb58",
-  "migrationVersion": {
-    "visualization": "7.10.0"
-  },
-  "references": [
-    {
-      "id": "80737060-1971-11eb-a9c0-a59f3effeb58",
-      "name": "search_0",
-      "type": "search"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2021-03-08T23:59:39.130Z",
-  "version": "WzY1MCwxXQ=="
+    "coreMigrationVersion": "7.14.0",
+    "id": "2adf1040-1972-11eb-a9c0-a59f3effeb58",
+    "migrationVersion": {
+        "visualization": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "80737060-1971-11eb-a9c0-a59f3effeb58",
+            "name": "search_0",
+            "type": "search"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        86
+    ],
+    "type": "visualization",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI0MywxXQ=="
 }

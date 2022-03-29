@@ -1,29 +1,34 @@
 {
-  "attributes": {
-    "columns": [
-      "_source"
-    ],
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.xray.xray.request\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.xray.xray.request\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [],
+        "title": "Xray HTTP Response Codes",
+        "version": 1
     },
-    "sort": [],
-    "title": "Xray HTTP Response Codes",
-    "version": 1
-  },
-  "id": "404b2cb0-8174-11eb-80f1-3dc2f2cdb26d",
-  "migrationVersion": {
-    "search": "7.9.3"
-  },
-  "references": [
-    {
-      "id": "fa39b330-8070-11eb-80f1-3dc2f2cdb26d",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "search",
-  "updated_at": "2021-03-10T07:43:05.979Z",
-  "version": "WzE4NTUsMV0="
+    "coreMigrationVersion": "7.14.0",
+    "id": "404b2cb0-8174-11eb-80f1-3dc2f2cdb26d",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "fa39b330-8070-11eb-80f1-3dc2f2cdb26d",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        233
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzIxNCwxXQ=="
 }

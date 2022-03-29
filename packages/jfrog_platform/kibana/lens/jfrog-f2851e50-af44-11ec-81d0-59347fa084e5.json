@@ -1,0 +1,147 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "2e6b7dc8-d2ac-4f53-a924-63e5aa95589a": {
+                            "columnOrder": [
+                                "1e5f6691-3276-486a-ace2-1b6951e017d8",
+                                "0eafb59c-17bc-4e04-88f4-ee161204c950",
+                                "85570111-e141-4662-8350-8776ccfec3eb",
+                                "32ddaed9-754a-4ef9-9dd2-a25150225a7c"
+                            ],
+                            "columns": {
+                                "0eafb59c-17bc-4e04-88f4-ee161204c950": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Allocated",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.go_memstats_heap_allocated_bytes"
+                                },
+                                "1e5f6691-3276-486a-ace2-1b6951e017d8": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "32ddaed9-754a-4ef9-9dd2-a25150225a7c": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Objects in Heap",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.go_memstats_heap_objects_total"
+                                },
+                                "85570111-e141-4662-8350-8776ccfec3eb": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Used",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.go_memstats_heap_in_use_bytes"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "0eafb59c-17bc-4e04-88f4-ee161204c950",
+                            "85570111-e141-4662-8350-8776ccfec3eb",
+                            "32ddaed9-754a-4ef9-9dd2-a25150225a7c"
+                        ],
+                        "layerId": "2e6b7dc8-d2ac-4f53-a924-63e5aa95589a",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "1e5f6691-3276-486a-ace2-1b6951e017d8"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Xray Heap Metrics",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "f2851e50-af44-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-2e6b7dc8-d2ac-4f53-a924-63e5aa95589a",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648547120314,
+        464
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-29T09:45:20.314Z",
+    "version": "Wzk5NywxXQ=="
+}

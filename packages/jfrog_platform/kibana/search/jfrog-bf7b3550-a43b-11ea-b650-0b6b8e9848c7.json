@@ -1,34 +1,39 @@
 {
-  "attributes": {
-    "columns": [
-      "_source"
-    ],
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.artifactory.access and action_response : \\\"DENIED*\\\" and not username : \\\"NA \\\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.artifactory.access and action_response : \\\"DENIED*\\\" and not username : \\\"NA \\\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+            [
+                "timestamp",
+                "desc"
+            ]
+        ],
+        "title": "Denied Actions by Username",
+        "version": 1
     },
-    "sort": [
-      [
-        "timestamp",
-        "desc"
-      ]
+    "coreMigrationVersion": "7.14.0",
+    "id": "bf7b3550-a43b-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
     ],
-    "title": "Denied Actions by Username",
-    "version": 1
-  },
-  "id": "bf7b3550-a43b-11ea-b650-0b6b8e9848c7",
-  "migrationVersion": {
-    "search": "7.9.3"
-  },
-  "references": [
-    {
-      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "search",
-  "updated_at": "2021-03-08T23:59:39.130Z",
-  "version": "WzY1NSwxXQ=="
+    "sort": [
+        1648472554048,
+        96
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI0OCwxXQ=="
 }

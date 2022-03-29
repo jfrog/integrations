@@ -1,34 +1,39 @@
 {
-  "attributes": {
-    "columns": [
-      "_source"
-    ],
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.artifactory.service and log_level : ERROR\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.artifactory.service and log_level : ERROR\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+            [
+                "timestamp",
+                "desc"
+            ]
+        ],
+        "title": "Artifactory Errors Over Time",
+        "version": 1
     },
-    "sort": [
-      [
-        "timestamp",
-        "desc"
-      ]
+    "coreMigrationVersion": "7.14.0",
+    "id": "bc6c92d0-a127-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
     ],
-    "title": "Artifactory Errors Over Time",
-    "version": 1
-  },
-  "id": "bc6c92d0-a127-11ea-b650-0b6b8e9848c7",
-  "migrationVersion": {
-    "search": "7.9.3"
-  },
-  "references": [
-    {
-      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "search",
-  "updated_at": "2021-03-08T23:59:39.130Z",
-  "version": "WzYzMywxXQ=="
+    "sort": [
+        1648472554048,
+        239
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzIxOCwxXQ=="
 }

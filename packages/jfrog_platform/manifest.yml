@@ -6,10 +6,10 @@ license: basic
 description: "Visualize Metrics and violation data from Artifactory and Xray"
 type: integration
 categories:
-  - custom
-release: ga
+  - security
+release: beta
 conditions:
-  kibana.version: "^7.16.0 || 8.0.0"
+  kibana.version: "^7.14.0 || ^8.0.0"
 screenshots:
   - src: /img/sample-screenshot.png
     title: Sample screenshot
@@ -20,13 +20,5 @@ icons:
     title: Sample logo
     size: 32x32
     type: image/svg+xml
-policy_templates:
-  - name: sample
-    title: Sample logs
-    description: Collect sample logs
-    inputs:
-      - type: logfile
-        title: Collect sample logs from instances
-        description: Collecting sample logs
 owner:
   github: elastic/integrations

@@ -1,0 +1,128 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "c26aa375-7703-48a6-8a03-6f258696e598": {
+                            "columnOrder": [
+                                "379cc568-ab26-4d75-bc2f-03ccfb081734",
+                                "5fb2867a-94fd-4ad8-a724-36860a3b4efc",
+                                "50a0e6e9-c4a1-4234-8ee9-c3a0d5efa517"
+                            ],
+                            "columns": {
+                                "379cc568-ab26-4d75-bc2f-03ccfb081734": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "50a0e6e9-c4a1-4234-8ee9-c3a0d5efa517": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Used",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.app_disk_used_bytes"
+                                },
+                                "5fb2867a-94fd-4ad8-a724-36860a3b4efc": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Free",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.app_disk_free_bytes"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "5fb2867a-94fd-4ad8-a724-36860a3b4efc",
+                            "50a0e6e9-c4a1-4234-8ee9-c3a0d5efa517"
+                        ],
+                        "layerId": "c26aa375-7703-48a6-8a03-6f258696e598",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "379cc568-ab26-4d75-bc2f-03ccfb081734"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Xray Disk Usgae",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "7f6fc0f0-af44-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-c26aa375-7703-48a6-8a03-6f258696e598",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648546927236,
+        420
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-29T09:42:07.236Z",
+    "version": "Wzk1MiwxXQ=="
+}

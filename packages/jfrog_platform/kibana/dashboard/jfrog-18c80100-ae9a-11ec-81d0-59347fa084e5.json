@@ -1,0 +1,63 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        },
+        "optionsJSON": "{\"useMargins\":true,\"syncColors\":false,\"hidePanelTitles\":false}",
+        "panelsJSON": "[{\"version\":\"7.14.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"bb86a242-79b0-4b47-8eaa-8b3efdb98098\"},\"panelIndex\":\"bb86a242-79b0-4b47-8eaa-8b3efdb98098\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_bb86a242-79b0-4b47-8eaa-8b3efdb98098\"},{\"version\":\"7.14.0\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":0,\"w\":24,\"h\":15,\"i\":\"1dc8f417-8f1f-4d77-8e3e-e498192ad033\"},\"panelIndex\":\"1dc8f417-8f1f-4d77-8e3e-e498192ad033\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_1dc8f417-8f1f-4d77-8e3e-e498192ad033\"},{\"version\":\"7.14.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":15,\"w\":24,\"h\":15,\"i\":\"dccf4a12-fb11-425e-9dbc-7e9957ce1973\"},\"panelIndex\":\"dccf4a12-fb11-425e-9dbc-7e9957ce1973\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_dccf4a12-fb11-425e-9dbc-7e9957ce1973\"},{\"version\":\"7.14.0\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":15,\"w\":24,\"h\":15,\"i\":\"a4c3e341-4306-43ed-95dd-5db6781d451c\"},\"panelIndex\":\"a4c3e341-4306-43ed-95dd-5db6781d451c\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_a4c3e341-4306-43ed-95dd-5db6781d451c\"},{\"version\":\"7.14.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":30,\"w\":24,\"h\":15,\"i\":\"9e09a525-3815-406c-8c61-f31d6756a09c\"},\"panelIndex\":\"9e09a525-3815-406c-8c61-f31d6756a09c\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_9e09a525-3815-406c-8c61-f31d6756a09c\"},{\"version\":\"7.14.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":30,\"w\":24,\"h\":15,\"i\":\"7279ca4d-f002-468a-8f56-f8fb493af62e\"},\"panelIndex\":\"7279ca4d-f002-468a-8f56-f8fb493af62e\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_7279ca4d-f002-468a-8f56-f8fb493af62e\"},{\"version\":\"7.14.0\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":45,\"w\":48,\"h\":13,\"i\":\"b82b3abd-0fe9-47ed-9d73-34d217d2bdc0\"},\"panelIndex\":\"b82b3abd-0fe9-47ed-9d73-34d217d2bdc0\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_b82b3abd-0fe9-47ed-9d73-34d217d2bdc0\"}]",
+        "timeRestore": false,
+        "title": "Artifactory Metrics",
+        "version": 1
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "18c80100-ae9a-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "dashboard": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "0d1673c0-ae98-11ec-81d0-59347fa084e5",
+            "name": "bb86a242-79b0-4b47-8eaa-8b3efdb98098:panel_bb86a242-79b0-4b47-8eaa-8b3efdb98098",
+            "type": "visualization"
+        },
+        {
+            "id": "b2a19a40-ae98-11ec-81d0-59347fa084e5",
+            "name": "1dc8f417-8f1f-4d77-8e3e-e498192ad033:panel_1dc8f417-8f1f-4d77-8e3e-e498192ad033",
+            "type": "lens"
+        },
+        {
+            "id": "1f1c4b20-ae99-11ec-81d0-59347fa084e5",
+            "name": "dccf4a12-fb11-425e-9dbc-7e9957ce1973:panel_dccf4a12-fb11-425e-9dbc-7e9957ce1973",
+            "type": "lens"
+        },
+        {
+            "id": "747385c0-ae99-11ec-81d0-59347fa084e5",
+            "name": "a4c3e341-4306-43ed-95dd-5db6781d451c:panel_a4c3e341-4306-43ed-95dd-5db6781d451c",
+            "type": "lens"
+        },
+        {
+            "id": "6e29add0-ae98-11ec-81d0-59347fa084e5",
+            "name": "9e09a525-3815-406c-8c61-f31d6756a09c:panel_9e09a525-3815-406c-8c61-f31d6756a09c",
+            "type": "lens"
+        },
+        {
+            "id": "c8abe2e0-ae99-11ec-81d0-59347fa084e5",
+            "name": "7279ca4d-f002-468a-8f56-f8fb493af62e:panel_7279ca4d-f002-468a-8f56-f8fb493af62e",
+            "type": "visualization"
+        },
+        {
+            "id": "069caad0-ae9a-11ec-81d0-59347fa084e5",
+            "name": "b82b3abd-0fe9-47ed-9d73-34d217d2bdc0:panel_b82b3abd-0fe9-47ed-9d73-34d217d2bdc0",
+            "type": "lens"
+        }
+    ],
+    "sort": [
+        1648473831958,
+        335
+    ],
+    "type": "dashboard",
+    "updated_at": "2022-03-28T13:23:51.958Z",
+    "version": "WzY4NCwxXQ=="
+}

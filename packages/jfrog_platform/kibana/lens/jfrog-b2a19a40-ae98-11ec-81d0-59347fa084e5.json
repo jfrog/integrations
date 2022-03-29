@@ -1,0 +1,128 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "8ae92185-0ab3-48d3-93c5-0bd3514eb0c6": {
+                            "columnOrder": [
+                                "261b63fa-1a87-4b11-85e5-1ebe0a9b11b9",
+                                "ea1d0f7a-e456-4474-9fe5-d73e7be46436",
+                                "9f07194b-46d3-48eb-90be-8e49275d59ba"
+                            ],
+                            "columns": {
+                                "261b63fa-1a87-4b11-85e5-1ebe0a9b11b9": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "9f07194b-46d3-48eb-90be-8e49275d59ba": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Used",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.sys_memory_used_bytes"
+                                },
+                                "ea1d0f7a-e456-4474-9fe5-d73e7be46436": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Free",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.sys_memory_free_bytes"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "ea1d0f7a-e456-4474-9fe5-d73e7be46436",
+                            "9f07194b-46d3-48eb-90be-8e49275d59ba"
+                        ],
+                        "layerId": "8ae92185-0ab3-48d3-93c5-0bd3514eb0c6",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "261b63fa-1a87-4b11-85e5-1ebe0a9b11b9"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Artifactory System Memory",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "b2a19a40-ae98-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-8ae92185-0ab3-48d3-93c5-0bd3514eb0c6",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648473139689,
+        277
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-28T13:12:19.689Z",
+    "version": "WzQyNywxXQ=="
+}

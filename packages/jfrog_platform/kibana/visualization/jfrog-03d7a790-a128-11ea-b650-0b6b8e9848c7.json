@@ -1,27 +1,32 @@
 {
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        },
+        "savedSearchRefName": "search_0",
+        "title": "Artifactory Errors Over Time",
+        "uiStateJSON": "{\"vis\":{\"colors\":{\"Number of Artifactory Errors\":\"#BF1B00\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"Artifactory Errors Over Time\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100,\"filter\":true},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"date\",\"params\":{\"pattern\":\"HH:mm:ss\"}},\"params\":{\"date\":true,\"interval\":\"PT30S\",\"format\":\"HH:mm:ss\",\"bounds\":{\"min\":\"2020-10-29T06:55:48.396Z\",\"max\":\"2020-10-29T07:10:48.396Z\"}},\"aggType\":\"date_histogram\"},\"y\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}]},\"grid\":{\"categoryLines\":false},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Number of Artifactory Errors\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Number of Artifactory Errors\"},\"type\":\"value\"}],\"palette\":{\"type\":\"palette\",\"name\":\"kibana_palette\"},\"isVislibVis\":true,\"detailedTooltip\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Artifactory Errors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"timestamp\",\"timeRange\":{\"from\":\"now-15m\",\"to\":\"now\"},\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"drop_partials\":false,\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"time\"}}]}"
     },
-    "savedSearchRefName": "search_0",
-    "title": "Artifactory Errors Over Time",
-    "uiStateJSON": "{\"vis\":{\"colors\":{\"Number of Artifactory Errors\":\"#BF1B00\"}}}",
-    "version": 1,
-    "visState": "{\"title\":\"Artifactory Errors Over Time\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"date\",\"params\":{\"pattern\":\"HH:mm:ss\"}},\"params\":{\"date\":true,\"interval\":\"PT30S\",\"format\":\"HH:mm:ss\",\"bounds\":{\"min\":\"2020-10-29T06:55:48.396Z\",\"max\":\"2020-10-29T07:10:48.396Z\"}},\"aggType\":\"date_histogram\"},\"y\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}]},\"grid\":{\"categoryLines\":false},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Number of Artifactory Errors\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Number of Artifactory Errors\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Artifactory Errors\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"timestamp\",\"timeRange\":{\"from\":\"now-15m\",\"to\":\"now\"},\"useNormalizedEsInterval\":true,\"interval\":\"auto\",\"drop_partials\":false,\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"time\"}}]}"
-  },
-  "id": "03d7a790-a128-11ea-b650-0b6b8e9848c7",
-  "migrationVersion": {
-    "visualization": "7.10.0"
-  },
-  "references": [
-    {
-      "id": "bc6c92d0-a127-11ea-b650-0b6b8e9848c7",
-      "name": "search_0",
-      "type": "search"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2021-03-08T23:59:39.130Z",
-  "version": "WzYzNCwxXQ=="
+    "coreMigrationVersion": "7.14.0",
+    "id": "03d7a790-a128-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "visualization": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "bc6c92d0-a127-11ea-b650-0b6b8e9848c7",
+            "name": "search_0",
+            "type": "search"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        241
+    ],
+    "type": "visualization",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzIxOSwxXQ=="
 }

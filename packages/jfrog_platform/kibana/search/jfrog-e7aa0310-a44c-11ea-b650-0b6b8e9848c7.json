@@ -1,34 +1,39 @@
 {
-  "attributes": {
-    "columns": [
-      "_source"
-    ],
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.access.audit and not user : \\\"UNKNOWN\\\" and not event : \\\"TKN\\\" and not event_type : \\\"C\\\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"log_source : jfrog.rt.access.audit and not user : \\\"UNKNOWN\\\" and not event : \\\"TKN\\\" and not event_type : \\\"C\\\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+            [
+                "timestamp",
+                "desc"
+            ]
+        ],
+        "title": "Audit Admin Users",
+        "version": 1
     },
-    "sort": [
-      [
-        "timestamp",
-        "desc"
-      ]
+    "coreMigrationVersion": "7.14.0",
+    "id": "e7aa0310-a44c-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
     ],
-    "title": "Audit Admin Users",
-    "version": 1
-  },
-  "id": "e7aa0310-a44c-11ea-b650-0b6b8e9848c7",
-  "migrationVersion": {
-    "search": "7.9.3"
-  },
-  "references": [
-    {
-      "id": "ccce1110-1a1e-11eb-9274-2b7f10105e1e",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "search",
-  "updated_at": "2021-03-08T23:59:39.130Z",
-  "version": "WzY4NSwxXQ=="
+    "sort": [
+        1648472554048,
+        230
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI5NywxXQ=="
 }
