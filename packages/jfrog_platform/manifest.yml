@@ -11,8 +11,16 @@ release: beta
 conditions:
   kibana.version: "^7.14.0 || ^8.0.0"
 screenshots:
-  - src: /img/sample-screenshot.png
-    title: Sample screenshot
+  - src: /img/Artifact_downloads.png
+    title: Artifact Downloads
+    size: 600x600
+    type: image/png
+  - src: /img/Artifactory_logs.png
+    title: Artifact Logs
+    size: 600x600
+    type: image/png
+  - src: /img/Artifactory_metrics.png
+    title: Artifact Metrics
     size: 600x600
     type: image/png
 icons:
