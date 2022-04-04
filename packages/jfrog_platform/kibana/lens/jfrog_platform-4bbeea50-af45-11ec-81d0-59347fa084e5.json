@@ -1,0 +1,147 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "40827e1c-d362-42b6-88c4-36ee38d2e097": {
+                            "columnOrder": [
+                                "f6a29a93-a1de-4fcd-9756-d17a9eacedb4",
+                                "91660c56-6234-4829-a622-6ccfe383b8cd",
+                                "feb98ae0-e6d7-41b3-8098-81fe812f6a36",
+                                "48ed4f5d-7a42-4cf5-937f-ded95e9caa85"
+                            ],
+                            "columns": {
+                                "48ed4f5d-7a42-4cf5-937f-ded95e9caa85": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Max Open",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.db_connection_pool_max_open_total"
+                                },
+                                "91660c56-6234-4829-a622-6ccfe383b8cd": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "In Use",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.db_connection_pool_in_use_total"
+                                },
+                                "f6a29a93-a1de-4fcd-9756-d17a9eacedb4": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "feb98ae0-e6d7-41b3-8098-81fe812f6a36": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Idle",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.xray.db_connection_pool_idle_total"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "91660c56-6234-4829-a622-6ccfe383b8cd",
+                            "feb98ae0-e6d7-41b3-8098-81fe812f6a36",
+                            "48ed4f5d-7a42-4cf5-937f-ded95e9caa85"
+                        ],
+                        "layerId": "40827e1c-d362-42b6-88c4-36ee38d2e097",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "f6a29a93-a1de-4fcd-9756-d17a9eacedb4"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Xray DB Connections",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-4bbeea50-af45-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "jfrog_platform-a7b897b0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-40827e1c-d362-42b6-88c4-36ee38d2e097",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648547270011,
+        508
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-29T09:47:50.011Z",
+    "version": "WzEwNDEsMV0="
+}

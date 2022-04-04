@@ -1,0 +1,78 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        },
+        "optionsJSON": "{\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":11,\"i\":\"1\"},\"panelIndex\":\"1\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_1\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":0,\"w\":24,\"h\":11,\"i\":\"2\"},\"panelIndex\":\"2\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_2\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":11,\"w\":24,\"h\":10,\"i\":\"3\"},\"panelIndex\":\"3\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_3\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":21,\"w\":24,\"h\":10,\"i\":\"4\"},\"panelIndex\":\"4\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"Count\":\"#3F6833\"}},\"enhancements\":{}},\"title\":\"Top 10 Users By Docker Pulls\",\"panelRefName\":\"panel_4\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":11,\"w\":24,\"h\":10,\"i\":\"5\"},\"panelIndex\":\"5\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"Count\":\"#3F6833\"}},\"enhancements\":{}},\"title\":\"Top 10 IPs By Docker Pulls\",\"panelRefName\":\"panel_5\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":31,\"w\":24,\"h\":10,\"i\":\"6\"},\"panelIndex\":\"6\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"busybox\":\"#EAB839\"}},\"enhancements\":{}},\"panelRefName\":\"panel_6\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":21,\"w\":24,\"h\":10,\"i\":\"7\"},\"panelIndex\":\"7\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_7\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":41,\"w\":24,\"h\":10,\"i\":\"8\"},\"panelIndex\":\"8\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"Sum of request_content\":\"#052B51\"}},\"enhancements\":{}},\"panelRefName\":\"panel_8\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":31,\"w\":24,\"h\":10,\"i\":\"9\"},\"panelIndex\":\"9\",\"embeddableConfig\":{\"vis\":{\"colors\":{\"Sum of response_content\":\"#052B51\"}},\"enhancements\":{}},\"panelRefName\":\"panel_9\"},{\"version\":\"7.3.0\",\"type\":\"visualization\",\"gridData\":{\"x\":12,\"y\":0,\"w\":12,\"h\":11,\"i\":\"10\"},\"panelIndex\":\"10\",\"embeddableConfig\":{\"enhancements\":{}},\"title\":\"Docker Remote Repo vs Cache\",\"panelRefName\":\"panel_10\"}]",
+        "timeRestore": false,
+        "title": "Docker",
+        "version": 1
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-cc5b5350-1974-11eb-a9c0-a59f3effeb58",
+    "migrationVersion": {
+        "dashboard": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-54e50cd0-1974-11eb-a9c0-a59f3effeb58",
+            "name": "1:panel_1",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-2adf1040-1972-11eb-a9c0-a59f3effeb58",
+            "name": "2:panel_2",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-7ee23720-1973-11eb-a9c0-a59f3effeb58",
+            "name": "3:panel_3",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-7665ba30-1992-11eb-a9c0-a59f3effeb58",
+            "name": "4:panel_4",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-c4a947c0-1992-11eb-a9c0-a59f3effeb58",
+            "name": "5:panel_5",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-4c35c350-a132-11ea-b650-0b6b8e9848c7",
+            "name": "6:panel_6",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-ed4ff090-a131-11ea-b650-0b6b8e9848c7",
+            "name": "7:panel_7",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-f7f434a0-a435-11ea-b650-0b6b8e9848c7",
+            "name": "8:panel_8",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-e47869a0-a435-11ea-b650-0b6b8e9848c7",
+            "name": "9:panel_9",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-755b14a0-1a19-11eb-afba-ff656e269e90",
+            "name": "10:panel_10",
+            "type": "visualization"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        222
+    ],
+    "type": "dashboard",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI5NCwxXQ=="
+}

@@ -1,0 +1,23 @@
+{
+    "attributes": {
+        "fieldAttrs": "{}",
+        "fields": "[]",
+        "runtimeFieldMap": "{}",
+        "timeFieldName": "@timestamp",
+        "title": "unified-metrics-artifactory*",
+        "typeMeta": "{}"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-b5771de0-ae97-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "index-pattern": "7.11.0"
+    },
+    "references": [],
+    "sort": [
+        1648472714948,
+        251
+    ],
+    "type": "index-pattern",
+    "updated_at": "2022-03-28T13:05:14.948Z",
+    "version": "WzMyMiwxXQ=="
+}

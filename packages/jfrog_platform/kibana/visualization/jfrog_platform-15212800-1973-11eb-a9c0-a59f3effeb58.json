@@ -1,0 +1,32 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        },
+        "savedSearchRefName": "search_0",
+        "title": "Dockerhub Pull Requests in rolling 6 Hr window - count",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Dockerhub Pull Requests in rolling 6 Hr window - count\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":false,\"truncate\":100,\"filter\":true},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"string\"},\"params\":{},\"aggType\":\"date_range\"},\"y\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}]},\"palette\":{\"type\":\"palette\",\"name\":\"kibana_palette\"},\"isVislibVis\":true,\"detailedTooltip\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_range\",\"schema\":\"segment\",\"params\":{\"field\":\"timestamp\",\"ranges\":[{\"from\":\"now-6h\",\"to\":\"now\"}],\"customLabel\":\"Rolling 6 hour window\"}}]}"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-15212800-1973-11eb-a9c0-a59f3effeb58",
+    "migrationVersion": {
+        "visualization": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-80737060-1971-11eb-a9c0-a59f3effeb58",
+            "name": "search_0",
+            "type": "search"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        65
+    ],
+    "type": "visualization",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzIzNCwxXQ=="
+}
