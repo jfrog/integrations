@@ -1,0 +1,39 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"log_source : jfrog.rt.artifactory.request and request_content_length_2 \u003e 0\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+            [
+                "timestamp",
+                "desc"
+            ]
+        ],
+        "title": "Download requests 9",
+        "version": 1
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-339c5e90-a1e5-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        88
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI0NCwxXQ=="
+}

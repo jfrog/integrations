@@ -1,0 +1,39 @@
+{
+    "attributes": {
+        "columns": [
+            "_source"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"log_source : jfrog.rt.artifactory.request and return_status : 5*\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+            [
+                "timestamp",
+                "desc"
+            ]
+        ],
+        "title": "Artifactory 5xx Status Codes",
+        "version": 1
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-fba32bc0-a128-11ea-b650-0b6b8e9848c7",
+    "migrationVersion": {
+        "search": "7.9.3"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-ccce1110-1a1e-11eb-9274-2b7f10105e1e",
+            "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        169
+    ],
+    "type": "search",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI3OSwxXQ=="
+}

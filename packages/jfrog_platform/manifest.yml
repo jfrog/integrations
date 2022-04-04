@@ -1,0 +1,32 @@
+format_version: 1.0.0
+name: jfrog_platform
+title: "JFrog Platform"
+version: 0.0.1
+license: basic
+description: "Visualize Metrics and violation data from Artifactory and Xray"
+type: integration
+categories:
+  - security
+release: beta
+conditions:
+  kibana.version: "^7.14.0 || ^8.0.0"
+screenshots:
+  - src: /img/Artifact_downloads.png
+    title: Artifact Downloads
+    size: 600x600
+    type: image/png
+  - src: /img/Artifactory_logs.png
+    title: Artifact Logs
+    size: 600x600
+    type: image/png
+  - src: /img/Artifactory_metrics.png
+    title: Artifact Metrics
+    size: 600x600
+    type: image/png
+icons:
+  - src: /img/jfrog-logo.svg
+    title: Sample logo
+    size: 32x32
+    type: image/svg+xml
+owner:
+  github: elastic/integrations

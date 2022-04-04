@@ -1,0 +1,147 @@
+{
+    "attributes": {
+        "description": "",
+        "state": {
+            "datasourceStates": {
+                "indexpattern": {
+                    "layers": {
+                        "fa0c2111-20b6-46a8-b361-97aca5c25aa1": {
+                            "columnOrder": [
+                                "3c29583f-95dc-480b-8917-4d228d459a19",
+                                "86472ac0-f377-422d-b83f-9b46cdd2e31c",
+                                "7978451d-cf59-4e35-885b-eaa8c8eae6b6",
+                                "95d55b46-6f93-49e2-9487-e35fab06c869"
+                            ],
+                            "columns": {
+                                "3c29583f-95dc-480b-8917-4d228d459a19": {
+                                    "customLabel": true,
+                                    "dataType": "date",
+                                    "isBucketed": true,
+                                    "label": "Time",
+                                    "operationType": "date_histogram",
+                                    "params": {
+                                        "interval": "auto"
+                                    },
+                                    "scale": "interval",
+                                    "sourceField": "@timestamp"
+                                },
+                                "7978451d-cf59-4e35-885b-eaa8c8eae6b6": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Duration",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_artifacts_gc_duration_seconds"
+                                },
+                                "86472ac0-f377-422d-b83f-9b46cdd2e31c": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Cleaned",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "bytes",
+                                            "params": {
+                                                "decimals": 2
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_artifacts_gc_size_cleaned_bytes"
+                                },
+                                "95d55b46-6f93-49e2-9487-e35fab06c869": {
+                                    "customLabel": true,
+                                    "dataType": "number",
+                                    "isBucketed": false,
+                                    "label": "Binaries Total",
+                                    "operationType": "median",
+                                    "params": {
+                                        "format": {
+                                            "id": "number",
+                                            "params": {
+                                                "decimals": 0
+                                            }
+                                        }
+                                    },
+                                    "scale": "ratio",
+                                    "sourceField": "jfrog.artifactory.jfrt_artifacts_gc_binaries_total"
+                                }
+                            },
+                            "incompleteColumns": {}
+                        }
+                    }
+                }
+            },
+            "filters": [],
+            "query": {
+                "language": "kuery",
+                "query": ""
+            },
+            "visualization": {
+                "layers": [
+                    {
+                        "accessors": [
+                            "86472ac0-f377-422d-b83f-9b46cdd2e31c",
+                            "7978451d-cf59-4e35-885b-eaa8c8eae6b6",
+                            "95d55b46-6f93-49e2-9487-e35fab06c869"
+                        ],
+                        "layerId": "fa0c2111-20b6-46a8-b361-97aca5c25aa1",
+                        "position": "top",
+                        "seriesType": "line",
+                        "showGridlines": false,
+                        "xAccessor": "3c29583f-95dc-480b-8917-4d228d459a19"
+                    }
+                ],
+                "legend": {
+                    "isVisible": true,
+                    "position": "right"
+                },
+                "preferredSeriesType": "line",
+                "title": "Empty XY chart",
+                "valueLabels": "hide",
+                "yLeftExtent": {
+                    "mode": "full"
+                },
+                "yRightExtent": {
+                    "mode": "full"
+                }
+            }
+        },
+        "title": "Artifactory Garbage Collection",
+        "visualizationType": "lnsXY"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-747385c0-ae99-11ec-81d0-59347fa084e5",
+    "migrationVersion": {
+        "lens": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-current-indexpattern",
+            "type": "index-pattern"
+        },
+        {
+            "id": "jfrog_platform-b5771de0-ae97-11ec-81d0-59347fa084e5",
+            "name": "indexpattern-datasource-layer-fa0c2111-20b6-46a8-b361-97aca5c25aa1",
+            "type": "index-pattern"
+        }
+    ],
+    "sort": [
+        1648473464865,
+        303
+    ],
+    "type": "lens",
+    "updated_at": "2022-03-28T13:17:44.865Z",
+    "version": "WzUyOSwxXQ=="
+}

@@ -1,0 +1,48 @@
+{
+    "attributes": {
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        },
+        "optionsJSON": "{\"hidePanelTitles\":false,\"useMargins\":true}",
+        "panelsJSON": "[{\"version\":\"7.10.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":0,\"w\":48,\"h\":11,\"i\":\"e5062a00-8d24-4cd0-b968-94d500adbf15\"},\"panelIndex\":\"e5062a00-8d24-4cd0-b968-94d500adbf15\",\"embeddableConfig\":{\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Xray Log Volume\",\"panelRefName\":\"panel_e5062a00-8d24-4cd0-b968-94d500adbf15\"},{\"version\":\"7.10.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":11,\"w\":48,\"h\":11,\"i\":\"be3aec00-a2c8-4d38-94ff-3a703e75ce03\"},\"panelIndex\":\"be3aec00-a2c8-4d38-94ff-3a703e75ce03\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_be3aec00-a2c8-4d38-94ff-3a703e75ce03\"},{\"version\":\"7.10.0\",\"type\":\"visualization\",\"gridData\":{\"x\":0,\"y\":22,\"w\":24,\"h\":12,\"i\":\"4ad4a7a8-c98d-44dd-a7e7-6683980e5a90\"},\"panelIndex\":\"4ad4a7a8-c98d-44dd-a7e7-6683980e5a90\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_4ad4a7a8-c98d-44dd-a7e7-6683980e5a90\"},{\"version\":\"7.10.0\",\"type\":\"visualization\",\"gridData\":{\"x\":24,\"y\":22,\"w\":24,\"h\":12,\"i\":\"975faeda-b7ac-4d44-a890-bfa4ef4c2b18\"},\"panelIndex\":\"975faeda-b7ac-4d44-a890-bfa4ef4c2b18\",\"embeddableConfig\":{\"enhancements\":{}},\"panelRefName\":\"panel_975faeda-b7ac-4d44-a890-bfa4ef4c2b18\"}]",
+        "timeRestore": false,
+        "title": "Xray Logs",
+        "version": 1
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-4f15cbb0-8174-11eb-80f1-3dc2f2cdb26d",
+    "migrationVersion": {
+        "dashboard": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-f68ff0f0-8174-11eb-80f1-3dc2f2cdb26d",
+            "name": "e5062a00-8d24-4cd0-b968-94d500adbf15:panel_e5062a00-8d24-4cd0-b968-94d500adbf15",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-16be2950-8175-11eb-80f1-3dc2f2cdb26d",
+            "name": "be3aec00-a2c8-4d38-94ff-3a703e75ce03:panel_be3aec00-a2c8-4d38-94ff-3a703e75ce03",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-670e9de0-8175-11eb-80f1-3dc2f2cdb26d",
+            "name": "4ad4a7a8-c98d-44dd-a7e7-6683980e5a90:panel_4ad4a7a8-c98d-44dd-a7e7-6683980e5a90",
+            "type": "visualization"
+        },
+        {
+            "id": "jfrog_platform-01edae50-8176-11eb-80f1-3dc2f2cdb26d",
+            "name": "975faeda-b7ac-4d44-a890-bfa4ef4c2b18:panel_975faeda-b7ac-4d44-a890-bfa4ef4c2b18",
+            "type": "visualization"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        127
+    ],
+    "type": "dashboard",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzI2MCwxXQ=="
+}

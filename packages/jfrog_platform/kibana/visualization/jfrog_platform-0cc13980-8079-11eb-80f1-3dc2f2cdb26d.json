@@ -1,0 +1,32 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"vulnerability.category : License\",\"language\":\"kuery\"},\"filter\":[]}"
+        },
+        "savedSearchRefName": "search_0",
+        "title": "License Issues Count",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"License Issues Count\",\"type\":\"metric\",\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"params\":{\"customLabel\":\"License Issues\"},\"schema\":\"metric\"}],\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}}}"
+    },
+    "coreMigrationVersion": "7.14.0",
+    "id": "jfrog_platform-0cc13980-8079-11eb-80f1-3dc2f2cdb26d",
+    "migrationVersion": {
+        "visualization": "7.14.0"
+    },
+    "references": [
+        {
+            "id": "jfrog_platform-137b2340-8078-11eb-80f1-3dc2f2cdb26d",
+            "name": "search_0",
+            "type": "search"
+        }
+    ],
+    "sort": [
+        1648472554048,
+        41
+    ],
+    "type": "visualization",
+    "updated_at": "2022-03-28T13:02:34.048Z",
+    "version": "WzIyNiwxXQ=="
+}
